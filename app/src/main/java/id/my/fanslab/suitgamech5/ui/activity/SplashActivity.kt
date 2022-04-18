@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
 
         activityScope.launch {
             delay(3000)
-            val intent = Intent(this@SplashActivity, ChooseEnemyActivity::class.java)
+            val intent = Intent(this@SplashActivity, LandingPageActivity::class.java)
             intent.putExtra(ChooseEnemyActivity.PLAYER, "Irvan")
             startActivity(intent)
             finish()

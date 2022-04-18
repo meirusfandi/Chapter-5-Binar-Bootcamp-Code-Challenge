@@ -15,4 +15,6 @@
     <string name="tv_type_you_name">Tuliskan namamu di bawah</string>
     <string name="player_vs_comp">Bermain suit melawan komputer</string>
     <string name="player_vs_player">Bermain suit melawan sesama pemain</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
