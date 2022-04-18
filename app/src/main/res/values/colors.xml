@@ -7,6 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="selected">#00BCD4</color>
+    <color name="unselected">#00ffffff</color>
+    <color name="result_draw">#FF3700B3</color>
+    <color name="result_win">#09C510</color>
+    <color name="text_vs">#F44336</color>
+    <color name="player_color">#2196F3</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#4CAF50</color>
     <color name="paper_color">#FFC107</color>
     <color name="rock_color">#673AB7</color>
     <color name="sciccors_color">#8BC34A</color>

@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_batu.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/drawable/ic_close.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/drawable/ic_gunting.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/drawable/ic_kertas.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/drawable/ic_landing_page1.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/drawable/ic_landing_page2.xml" value="0.2796296296296296" />
+        <entry key="app/src/main/res/drawable/player_background.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/player_unselected.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/result_draw.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/drawable/result_win.xml" value="0.2101851851851852" />
+        <entry key="app/src/main/res/layout/activity_choose_enemy.xml" value="0.13677811550151975" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2617753623188406" />
       </map>
     </option>

@@ -4,15 +4,206 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.MainActivity">
+
+    <!-- Header Section -->
+    <ImageView
+        android:id="@+id/btn_close"
+        android:src="@drawable/ic_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
+        android:id="@+id/tv_kertas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        tools:text="@string/kertas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:rotation="350"
+        android:textColor="@color/yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_gunting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/gunting"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:rotation="350"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kertas" />
+
+    <TextView
+        android:id="@+id/tv_batu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/batu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:rotation="350"
+        android:textColor="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gunting" />
+    <!-- End of Header Section -->
+
+    <!-- Player 1 Section -->
+    <TextView
+        android:id="@+id/tv_player_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_1"
+        android:textColor="@color/player_color"
+        android:textSize="24sp"
+        android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_batu" />
+
+    <ImageView
+        android:id="@+id/player_batu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_batu"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_player_1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/player_kertas"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_kertas"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_batu"
+        app:layout_constraintBottom_toTopOf="@id/player_gunting"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/player_gunting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_gunting"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player_kertas"
+        app:layout_constraintBottom_toTopOf="@id/btn_refresh"
+        tools:ignore="ContentDescription" />
+    <!-- End of Player 1 Section -->
+
+    <!-- Result Section -->
+    <TextView
+        android:id="@+id/tv_vs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vs"
+        android:rotation="350"
+        android:textSize="64sp"
+        android:padding="8dp"
+        android:background="@drawable/player_unselected"
+        android:textStyle="bold"
+        android:textColor="@color/text_vs"
+        app:layout_constraintBottom_toTopOf="@+id/player_gunting"
+        app:layout_constraintEnd_toStartOf="@+id/com_kertas"
+        app:layout_constraintStart_toEndOf="@+id/player_kertas"
+        app:layout_constraintTop_toBottomOf="@+id/player_batu" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menang"
+        android:rotation="350"
+        android:textSize="32sp"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/player_gunting"
+        app:layout_constraintEnd_toStartOf="@+id/com_kertas"
+        app:layout_constraintStart_toEndOf="@+id/player_kertas"
+        app:layout_constraintTop_toBottomOf="@+id/player_batu" />
+    <!-- End of Result Section -->
+
+    <!-- Com Section -->
+    <TextView
+        android:id="@+id/tv_com"
+        android:text="@string/com"
+        android:textSize="24sp"
+        android:textColor="@color/player_color"
+        android:layout_marginTop="48dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_batu"/>
+
+    <ImageView
+        android:id="@+id/com_batu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_batu"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_com"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/com_kertas"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_kertas"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/com_batu"
+        app:layout_constraintBottom_toTopOf="@id/com_gunting"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:id="@+id/com_gunting"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_gunting"
+        android:layout_marginVertical="24dp"
+        android:layout_marginHorizontal="24dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/com_kertas"
+        app:layout_constraintBottom_toTopOf="@id/btn_refresh"
+        tools:ignore="ContentDescription" />
+    <!-- End of Com Section -->
+
+    <!-- Refresh Section -->
+    <ImageView
+        android:id="@+id/btn_refresh"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_refresh"
+        android:layout_margin="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
+    <!-- End of Refresh Section -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
