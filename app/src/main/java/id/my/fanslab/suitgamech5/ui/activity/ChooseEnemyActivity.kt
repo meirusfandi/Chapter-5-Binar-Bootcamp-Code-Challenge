@@ -4,9 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
-import id.my.fanslab.suitgamech5.R
 import id.my.fanslab.suitgamech5.databinding.ActivityChooseEnemyBinding
-import id.my.fanslab.suitgamech5.databinding.ActivitySplashBinding
 
 class ChooseEnemyActivity : AppCompatActivity() {
 
@@ -20,7 +18,11 @@ class ChooseEnemyActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val playerName = intent.getStringExtra(PLAYER)
-        val snackBar = Snackbar.make(binding.root, "Selamat Datang $playerName", Snackbar.LENGTH_LONG)
+        val snackBar = Snackbar.make(
+            binding.root,
+            "Selamat Datang $playerName",
+            Snackbar.LENGTH_LONG
+        )
 
         snackBar.setAction("Tutup") {
             snackBar.dismiss()

@@ -14,9 +14,14 @@
         <entry key="app/src/main/res/drawable/player_unselected.xml" value="0.2101851851851852" />
         <entry key="app/src/main/res/drawable/result_draw.xml" value="0.2101851851851852" />
         <entry key="app/src/main/res/drawable/result_win.xml" value="0.2101851851851852" />
-        <entry key="app/src/main/res/layout/activity_choose_enemy.xml" value="0.13677811550151975" />
+        <entry key="app/src/main/res/layout/activity_choose_enemy.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_landing_page.xml" value="0.14361702127659576" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.2617753623188406" />
+        <entry key="app/src/main/res/layout/dialog_result.xml" value="0.14361702127659576" />
+        <entry key="app/src/main/res/layout/fragment_first_landing.xml" value="0.1381340579710145" />
+        <entry key="app/src/main/res/layout/fragment_second_landing.xml" value="0.1381340579710145" />
+        <entry key="app/src/main/res/layout/fragment_third_landing.xml" value="0.1381340579710145" />
       </map>
     </option>
   </component>

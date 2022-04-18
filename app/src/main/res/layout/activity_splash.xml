@@ -27,7 +27,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:text="@string/kertas" />
+            android:text="@string/kertas" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/gunting"
@@ -39,7 +39,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/kertas"
-            tools:text="@string/gunting" />
+            android:text="@string/gunting" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/batu"
@@ -51,7 +51,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/gunting"
-            tools:text="@string/batu" />
+            android:text="@string/batu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

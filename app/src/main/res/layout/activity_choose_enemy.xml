@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/tv_title"
-        tools:text="@string/choose_enemy"
+        android:text="@string/choose_enemy"
         android:textSize="32sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -27,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/player_vs_com"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tv_player_vs_player"
@@ -45,7 +46,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player_vs_player" />
+        app:layout_constraintTop_toBottomOf="@+id/player_vs_player"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tv_player_vs_com"

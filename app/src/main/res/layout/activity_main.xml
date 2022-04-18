@@ -14,14 +14,15 @@
         android:layout_height="48dp"
         android:layout_margin="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/tv_kertas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        tools:text="@string/kertas"
+        android:text="@string/kertas"
         android:textSize="24sp"
         android:textStyle="bold"
         android:rotation="350"
@@ -34,7 +35,7 @@
         android:id="@+id/tv_gunting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/gunting"
+        android:text="@string/gunting"
         android:textSize="24sp"
         android:textStyle="bold"
         android:rotation="350"
@@ -47,7 +48,7 @@
         android:id="@+id/tv_batu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/batu"
+        android:text="@string/batu"
         android:textSize="24sp"
         android:textStyle="bold"
         android:rotation="350"
