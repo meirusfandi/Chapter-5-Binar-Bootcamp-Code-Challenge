@@ -1,8 +1,18 @@
 <resources>
     <string name="app_name">Suit Game Ch 5</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="kertas">Kertas</string>
     <string name="gunting">Gunting</string>
     <string name="batu">Batu</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="com">Com</string>
+    <string name="menang">Menang</string>
+    <string name="vs">VS</string>
+    <string name="choose_enemy">PILIH LAWANMU</string>
+    <string name="tv_result_game">Hasil Pertandingan</string>
+    <string name="btn_main_lagi">Main Lagi</string>
+    <string name="btn_kembali_ke_menu">Kembali Ke Menu</string>
+    <string name="tv_type_you_name">Tuliskan namamu di bawah</string>
+    <string name="player_vs_comp">Bermain suit melawan komputer</string>
+    <string name="player_vs_player">Bermain suit melawan sesama pemain</string>
 </resources>
