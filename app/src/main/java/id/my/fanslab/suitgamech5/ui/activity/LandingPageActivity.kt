@@ -8,24 +8,24 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import id.my.fanslab.suitgamech5.R
+import id.my.fanslab.suitgamech5.action.OnDataPass
 import id.my.fanslab.suitgamech5.databinding.ActivityLandingPageBinding
 import id.my.fanslab.suitgamech5.ui.adapter.LandingAdapter
 import id.my.fanslab.suitgamech5.ui.fragment.FirstLandingFragment
 import id.my.fanslab.suitgamech5.ui.fragment.SecondLandingFragment
 import id.my.fanslab.suitgamech5.ui.fragment.ThirdLandingFragment
 
-class LandingPageActivity : AppCompatActivity() {
+class LandingPageActivity : AppCompatActivity(), OnDataPass {
 
     private var _binding: ActivityLandingPageBinding? = null
     private val binding get() = _binding
     private val fragmentList = ArrayList<Fragment>()
+    private var playerName = ""
 
     @SuppressLint("ObsoleteSdkInt")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // making the status bar transparent
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP ) {
             window.decorView.systemUiVisibility =
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
@@ -64,11 +64,15 @@ class LandingPageActivity : AppCompatActivity() {
                     binding?.vpLanding?.currentItem = position + 1
                 } else {
                     val intent = Intent(this, ChooseEnemyActivity::class.java)
-                    intent.putExtra(ChooseEnemyActivity.PLAYER, "Irvan")
+                    intent.putExtra(ChooseEnemyActivity.PLAYER, playerName)
                     startActivity(intent)
                     finish()
                 }
             }
         }
+    }
+
+    override fun onDataPass(playerName: String) {
+        this.playerName = playerName
     }
 }
